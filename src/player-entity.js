@@ -55,13 +55,13 @@ export const player_entity = (() => {
       this.audioManager = {}
       this.audioManager.player = {
         
-        hit1: new Audio("http://localhost:8080/_resources/audio/collision/clamour3.wav"),
+        hit1: new Audio("https://opet.vercel.app/_resources/audio/collision/clamour3.wav"),
       }
       this.audioManager.walk = {
-        steps1: new Audio("http://localhost:8080/_resources/audio/walk/sfx_step_grass_l.flac"),
+        steps1: new Audio("https://opet.vercel.app/_resources/audio/walk/sfx_step_grass_l.flac"),
 
-        // bg4: new Audio("http://localhost:8080/_resources/audio/Pluto.mp3"),
-        // bg5: new Audio("http://localhost:8080/_resources/audio/OnTheBach.mp3"),
+        // bg4: new Audio("https://opet.vercel.app/_resources/audio/Pluto.mp3"),
+        // bg5: new Audio("https://opet.vercel.app/_resources/audio/OnTheBach.mp3"),
         current: {},
       }
       // let randomSelection = 1 + parseInt(Math.random()*Object.keys(this.audioManager.background).length - 1)
@@ -103,7 +103,7 @@ export const player_entity = (() => {
 
     _LoadMinecraftModels() {
       const loader = new FBXLoader();
-      loader.setPath('http://localhost:8080/_resources/fbx/guy/');
+      loader.setPath('https://opet.vercel.app/_resources/fbx/guy/');
       loader.load('guy.fbx', (fbx) => {
         this._target = fbx;
         // this._target.scale.setScalar(1);
@@ -155,7 +155,7 @@ export const player_entity = (() => {
         // loader.load('Sword And Shield Slash.fbx', (a) => { _OnLoad('attack', a); });
         // loader.load('Sword And Shield Death.fbx', (a) => { _OnLoad('death', a); });
 
-        loader.setPath('http://localhost:8080/_resources/fbx/guy/');
+        loader.setPath('https://opet.vercel.app/_resources/fbx/guy/');
         // loader.load('Sword And Shield Idle.fbx', (a) => { _OnLoad('idle', a); });
         loader.load('Standing W_Briefcase Idle.fbx', (a) => { _OnLoad('idle', a); });
         loader.load('Lifting.fbx', (a) => { _OnLoad('attack', a); });
@@ -178,7 +178,7 @@ export const player_entity = (() => {
 
     ___LoadMinecraftModels() {
       const loader = new FBXLoader();
-      loader.setPath('http://localhost:8080/_resources/pets/stebb/');
+      loader.setPath('https://opet.vercel.app/_resources/pets/stebb/');
       loader.load('stebb2.fbx', (fbx) => {
         this._target = fbx;
         // this._target.scale.setScalar(1);
@@ -230,7 +230,7 @@ export const player_entity = (() => {
         // loader.load('Sword And Shield Slash.fbx', (a) => { _OnLoad('attack', a); });
         // loader.load('Sword And Shield Death.fbx', (a) => { _OnLoad('death', a); });
 
-        loader.setPath('http://localhost:8080/_resources/pets/stebb/');
+        loader.setPath('https://opet.vercel.app/_resources/pets/stebb/');
         // loader.load('Sword And Shield Idle.fbx', (a) => { _OnLoad('idle', a); });
         loader.load('Standing W_Briefcase Idle.fbx', (a) => { _OnLoad('idle', a); });
         loader.load('Hiding Grab.fbx', (a) => { _OnLoad('attack', a); });
@@ -253,7 +253,7 @@ export const player_entity = (() => {
 
     _LoadMagicaModels() {
       const loader = new FBXLoader();
-      loader.setPath('http://localhost:8080/_resources/fbx/girl/');
+      loader.setPath('https://opet.vercel.app/_resources/fbx/girl/');
       loader.load('girl2.fbx', (fbx) => {
         this._target = fbx;
         // this._target.scale.setScalar(1);
@@ -305,7 +305,7 @@ export const player_entity = (() => {
         // loader.load('Sword And Shield Slash.fbx', (a) => { _OnLoad('attack', a); });
         // loader.load('Sword And Shield Death.fbx', (a) => { _OnLoad('death', a); });
 
-        loader.setPath('http://localhost:8080/_resources/pets/stebb/');
+        loader.setPath('https://opet.vercel.app/_resources/pets/stebb/');
         // loader.load('Sword And Shield Idle.fbx', (a) => { _OnLoad('idle', a); });
         loader.load('Standing W_Briefcase Idle.fbx', (a) => { _OnLoad('idle', a); });
         loader.load('Picking Up.fbx', (a) => { _OnLoad('attack', a); });
@@ -328,7 +328,7 @@ export const player_entity = (() => {
 
     _LoadPetModels() {
       const loader = new FBXLoader();
-      loader.setPath('http://localhost:8080/_resources/livepets/penguin/');
+      loader.setPath('https://opet.vercel.app/_resources/livepets/penguin/');
       loader.load('penguin.fbx', (fbx) => {
         this._target = fbx;
         this._target.scale.setScalar(2);
@@ -375,7 +375,7 @@ export const player_entity = (() => {
         };
 
         const loader = new FBXLoader(this._manager);
-        loader.setPath('http://localhost:8080/_resources/livepets/penguin/');
+        loader.setPath('https://opet.vercel.app/_resources/livepets/penguin/');
         loader.load('Standard Idle.fbx', (a) => { _OnLoad('idle', a); });
         loader.load('Standard Walk.fbx', (a) => { _OnLoad('walk', a); });
         loader.load('Running.fbx', (a) => { _OnLoad('run', a); });
