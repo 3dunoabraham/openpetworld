@@ -10,8 +10,8 @@ export const CONSTANTS = {
     defaultNetwork: "matic",
 
     defaultScanName: "Polygonscan",
-    baseURL: "http://openpetworld.com/petroulette",
-    defaultRouletteLink: "http://openpetworld.com/",
+    baseURL: "https://opet.vercel.app/petroulette",
+    defaultRouletteLink: "https://opet.vercel.app/",
     
     revertedList: {
         "REQUEST_EXISTS":                      "Already requested init random hash",

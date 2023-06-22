@@ -1446,8 +1446,8 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
           resourceName: m.resourceName,
           resourceTexture: m.resourceTexture,
           // resourcePath: 'https://opet.vercel.app/_resources/items/',
-          resourcePath: 'https://opet.vercel.app/_resources/items/./resources/monsters/FBX/',
-              npcId:"/resources/monsters/FBX/",
+          resourcePath: 'https://opet.vercel.app/_resources/items/resources/monsters/FBX/',
+          npcId:i,
           deathCallback: (e) => {
             this.deathCounter++
             this.searchLife(e)
