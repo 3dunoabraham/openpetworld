@@ -420,7 +420,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     let link;
     link = document.createElement("a")
     link.href = "https://chainlist.org"
-    // link.href = "http://localhost:8080/#section-status"
+    // link.href = "https://opet.vercel.app/#section-status"
     link.innerHTML = "or Change Network"
     link.className = "text-lg "
     link.setAttribute('target', '_blank')
@@ -530,7 +530,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
       let notThePet = new entity.Entity();
       notThePet.AddComponent(new gltf_component.AnimatedModelComponent({
           scene: this._scene,
-          resourcePath: 'http://localhost:8080/_resources/pets/fbx/',
+          resourcePath: 'https://opet.vercel.app/_resources/pets/fbx/',
           resourceName: foundPetName.toLowerCase()+'.fbx',
           scale: 3,
           visible: false,
@@ -1313,7 +1313,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
           scene: this._scene,
           resourceName: m.resourceName,
           resourceTexture: m.resourceTexture,
-          resourcePath: 'http://localhost:8080/_resources/items/',
+          resourcePath: 'https://opet.vercel.app/_resources/items/',
           // resourcePath: './resources/monsters/FBX/',
               npcId: i,
           deathCallback: (e) => {
@@ -1360,7 +1360,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     let petButton = new entity.Entity();
     petButton.AddComponent(new gltf_component.AnimatedModelComponent({
         scene: this._scene,
-        resourcePath: 'http://localhost:8080/_resources/fbx/islands/',
+        resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
         resourceName: '/2.1.button.pet.fbx',
         scale: 1,
         visible: false,
@@ -1388,7 +1388,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     let lifeButton = new entity.Entity();
     lifeButton.AddComponent(new gltf_component.AnimatedModelComponent({
         scene: this._scene,
-        resourcePath: 'http://localhost:8080/_resources/fbx/islands/',
+        resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
         resourceName: 'life.button.fbx',
         scale: 1,
         visible: false,
@@ -1417,7 +1417,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     let overdueButton = new entity.Entity();
     overdueButton.AddComponent(new gltf_component.AnimatedModelComponent({
         scene: this._scene,
-        resourcePath: 'http://localhost:8080/_resources/fbx/islands/',
+        resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
         resourceName: '2.2.button.overdue.fbx',
         scale: 1,
         visible: false,
@@ -1448,7 +1448,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     platform = new entity.Entity();
     platform.AddComponent(new gltf_component.StaticModelComponent({
         scene: this._scene,
-        resourcePath: 'http://localhost:8080/_resources/fbx/islands/',
+        resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
         resourceName: 'goals.sign.fbx',
         scale: 1,
         receiveShadow: true,
@@ -1460,7 +1460,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     let helppButton = new entity.Entity();
     helppButton.AddComponent(new gltf_component.AnimatedModelComponent({
         scene: this._scene,
-        resourcePath: 'http://localhost:8080/_resources/fbx/islands/',
+        resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
         resourceName: 'goals.search.fbx',
         scale: 1,
         // visible: false,
@@ -1524,7 +1524,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     platform = new entity.Entity();
     platform.AddComponent(new gltf_component.StaticModelComponent({
         scene: this._scene,
-        resourcePath: 'http://localhost:8080/_resources/fbx/islands/',
+        resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
         resourceName: "0.landscape.init.fbx",
         scale: 1,
         receiveShadow: true,
@@ -1567,7 +1567,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
         platform = new entity.Entity();
         platform.AddComponent(new gltf_component.StaticModelComponent({
             scene: this._scene,
-            resourcePath: 'http://localhost:8080/_resources/fbx/islands/',
+            resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
             resourceName: this.modelsKeys[j]+".fbx",
             scale: 1,
             receiveShadow: true,

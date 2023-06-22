@@ -28,7 +28,7 @@ export const quest_component = (() => {
               <br/><a target="_blank" href="https://t.me/openpetworld">Telegram Group</a>
               <br/><a target="_blank" href="https://t.me/openpetworld">Guide</a>
               <br/>
-              <br/><a href="http://localhost:8080/world.matic/">Go back to the Zoo</a>
+              <br/><a href="https://opet.vercel.app/world.matic/">Go back to the Zoo</a>
               <br/><span>You read this message again in your Quest Journal (Book Icon)</span>
               <br/><br/>
               `,
