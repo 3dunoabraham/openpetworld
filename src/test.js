@@ -658,7 +658,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
       notThePet.AddComponent(new gltf_component.AnimatedModelComponent({
           scene: this._scene,
           // resourcePath: 'https://opet.vercel.app/_resources/pets/fbx/',
-          resourceName: 'https://opet.vercel.app/_resources/pets/fbx/oundPetName.toLowerCase()'+'.fbx',
+          resourceName: `https://opet.vercel.app/_resources/pets/fbx/${foundPetName.toLowerCase()}`+'.fbx',
           scale: 3,
           visible: false,
           receiveShadow: true,
