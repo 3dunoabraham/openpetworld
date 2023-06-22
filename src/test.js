@@ -554,8 +554,8 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
       let notThePet = new entity.Entity();
       notThePet.AddComponent(new gltf_component.AnimatedModelComponent({
           scene: this._scene,
-          resourcePath: 'https://opet.vercel.app/_resources/pets/fbx/',
-          resourceName: 'monkey.fbx',
+          // resourcePath: 'https://opet.vercel.app/_resources/pets/fbx/',
+          resourceName: 'https://opet.vercel.app/_resources/pets/fbx/monkey.fbx',
           scale: 3,
           visible: false,
           receiveShadow: true,
@@ -657,8 +657,8 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
       let notThePet = new entity.Entity();
       notThePet.AddComponent(new gltf_component.AnimatedModelComponent({
           scene: this._scene,
-          resourcePath: 'https://opet.vercel.app/_resources/pets/fbx/',
-          resourceName: foundPetName.toLowerCase()+'.fbx',
+          // resourcePath: 'https://opet.vercel.app/_resources/pets/fbx/',
+          resourceName: 'https://opet.vercel.app/_resources/pets/fbx/oundPetName.toLowerCase()'+'.fbx',
           scale: 3,
           visible: false,
           receiveShadow: true,
@@ -1373,8 +1373,8 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
       const e = new entity.Entity();
       e.AddComponent(new gltf_component.StaticModelComponent({
         scene: this._scene,
-        resourcePath: './resources/nature2/GLTF/',
-        resourceName: 'Cloud' + index + '.glb',
+        // resourcePath: './resources/nature2/GLTF/',
+        resourceName: './resources/nature2/GLTF/Cloud' + index + '.glb',
         position: pos,
         scale: Math.random() * 5 + 10,
         emissive: new THREE.Color(0x808080),
@@ -1445,9 +1445,9 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
           scene: this._scene,
           resourceName: m.resourceName,
           resourceTexture: m.resourceTexture,
-          resourcePath: 'https://opet.vercel.app/_resources/items/',
-          // resourcePath: './resources/monsters/FBX/',
-              npcId: i,
+          // resourcePath: 'https://opet.vercel.app/_resources/items/',
+          resourcePath: 'https://opet.vercel.app/_resources/items/./resources/monsters/FBX/',
+              npcId:"/resources/monsters/FBX/",
           deathCallback: (e) => {
             this.deathCounter++
             this.searchLife(e)
@@ -1492,8 +1492,8 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     let petButton = new entity.Entity();
     petButton.AddComponent(new gltf_component.AnimatedModelComponent({
         scene: this._scene,
-        resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
-        resourceName: '2.1.button.pet.fbx',
+        // resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
+        resourceName: 'https://opet.vercel.app/_resources/fbx/islands/2.1.button.pet.fbx',
         scale: 1,
         visible: false,
         receiveShadow: true,
@@ -1520,8 +1520,8 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     let lifeButton = new entity.Entity();
     lifeButton.AddComponent(new gltf_component.AnimatedModelComponent({
         scene: this._scene,
-        resourcePath: 'https://opet.vercel.app/_resources/islands/',
-        resourceName: 'life.button.fbx',
+        // resourcePath: 'https://opet.vercel.app/_resources/islands/',
+        resourceName: 'https://opet.vercel.app/_resources/islands/life.button.fbx',
         scale: 1,
         visible: false,
         receiveShadow: true,
@@ -1549,8 +1549,8 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     let overdueButton = new entity.Entity();
     overdueButton.AddComponent(new gltf_component.AnimatedModelComponent({
         scene: this._scene,
-        resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
-        resourceName: '2.2.button.overdue.fbx',
+        // resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
+        resourceName: 'https://opet.vercel.app/_resources/fbx/islands/2.2.button.overdue.fbx',
         scale: 1,
         visible: false,
         receiveShadow: true,
@@ -1580,8 +1580,8 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     platform = new entity.Entity();
     platform.AddComponent(new gltf_component.StaticModelComponent({
         scene: this._scene,
-        resourcePath: 'https://opet.vercel.app/_resources/islands/',
-        resourceName: 'goals.sign.fbx',
+        // resourcePath: 'https://opet.vercel.app/_resources/islands/',
+        resourceName: 'https://opet.vercel.app/_resources/islands/goals.sign.fbx',
         scale: 1,
         receiveShadow: true,
         castShadow: true,
@@ -1592,8 +1592,8 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     let helppButton = new entity.Entity();
     helppButton.AddComponent(new gltf_component.AnimatedModelComponent({
         scene: this._scene,
-        resourcePath: 'https://opet.vercel.app/_resources/islands/',
-        resourceName: 'goals.search.fbx',
+        // resourcePath: 'https://opet.vercel.app/_resources/islands/',
+        resourceName: 'https://opet.vercel.app/_resources/islands/goals.search.fbx',
         scale: 1,
         // visible: false,
         receiveShadow: true,
@@ -1656,8 +1656,8 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     platform = new entity.Entity();
     platform.AddComponent(new gltf_component.StaticModelComponent({
         scene: this._scene,
-        resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
-        resourceName: "0.landscape.init.fbx",
+        // resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
+        resourceName: "https://opet.vercel.app/_resources/fbx/islands/0.landscape.init.fbx",
         scale: 1,
         receiveShadow: true,
         castShadow: true,
@@ -1699,8 +1699,8 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
         platform = new entity.Entity();
         platform.AddComponent(new gltf_component.StaticModelComponent({
             scene: this._scene,
-            resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
-            resourceName: this.modelsKeys[j]+".fbx",
+            // resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
+            resourceName: "https://opet.vercel.app/_resources/fbx/islands/his.modelsKeys[j]"+".fbx",
             scale: 1,
             receiveShadow: true,
             castShadow: true,
