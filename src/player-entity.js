@@ -149,31 +149,34 @@ export const player_entity = (() => {
   
         const loader = new FBXLoader(this._manager);
 
-        loader.setPath('https://opet.vercel.app/_resources/fbx/guy/');
+        // loader.setPath('https://opet.vercel.app/_resources/fbx/guy/');
+        let baseResUrl = "https://opet.vercel.app/_resources/fbx/guy/"
         // loader.load('Sword And Shield Idle.fbx', (a) => { _OnLoad('idle', a); });
-        loader.load('Standing W_Briefcase Idle.fbx', (a) => { _OnLoad('idle', a); });
-        loader.load('Lifting.fbx', (a) => { _OnLoad('attack', a); });
+        loader.load(baseResUrl+'Standing W_Briefcase Idle.fbx', (a) => { _OnLoad('idle', a); });
+        loader.load(baseResUrl+'Lifting.fbx', (a) => { _OnLoad('attack', a); });
         if (this.canFly)
         {
-          loader.load('Running Crawl.fbx', (a) => { _OnLoad('walk', a); });
-          loader.load('Treading Water.fbx', (a) => { _OnLoad('run', a); });
+          loader.load(baseResUrl+'Running Crawl.fbx', (a) => { _OnLoad('walk', a); });
+          loader.load(baseResUrl+'Treading Water.fbx', (a) => { _OnLoad('run', a); });
         } else {
-          loader.load('Standard Walk.fbx', (a) => { _OnLoad('walk', a); });
-          loader.load('Standard Run.fbx', (a) => { _OnLoad('run', a); });
+          loader.load(baseResUrl+'Standard Walk.fbx', (a) => { _OnLoad('walk', a); });
+          loader.load(baseResUrl+'Standard Run.fbx', (a) => { _OnLoad('run', a); });
         }
-        // loader.load('Swimming To Edge.fbx', (a) => { _OnLoad('run', a); });
-        loader.load('Swimming To Edge.fbx', (a) => { _OnLoad('hover', a); });
-        loader.load('Dying Backwards.fbx', (a) => { _OnLoad('death', a); });
-        // loader.load('Tut Hip Hop Dance.fbx', (a) => { _OnLoad('dance', a); });
-        loader.load('Ymca Dance.fbx', (a) => { _OnLoad('dance', a); });
+        // loader.load(baseResUrl+'Swimming To Edge.fbx', (a) => { _OnLoad('run', a); });
+        loader.load(baseResUrl+'Swimming To Edge.fbx', (a) => { _OnLoad('hover', a); });
+        loader.load(baseResUrl+'Dying Backwards.fbx', (a) => { _OnLoad('death', a); });
+        // loader.load(baseResUrl+'Tut Hip Hop Dance.fbx', (a) => { _OnLoad('dance', a); });
+        loader.load(baseResUrl+'Ymca Dance.fbx', (a) => { _OnLoad('dance', a); });
         
       });
     }
 
     ___LoadMinecraftModels() {
       const loader = new FBXLoader();
-      loader.setPath('https://opet.vercel.app/_resources/pets/stebb/');
-      loader.load('stebb2.fbx', (fbx) => {
+      // loader.setPath('https://opet.vercel.app/_resources/pets/stebb/');
+      let baseResUrl = "https://opet.vercel.app/_resources/pets/stebb/"
+
+      loader.load(baseResUrl+'stebb2.fbx', (fbx) => {
         this._target = fbx;
         // this._target.scale.setScalar(1);
         // this._target.scale.setScalar(0.0056);
@@ -218,31 +221,32 @@ export const player_entity = (() => {
   
         const loader = new FBXLoader(this._manager);
 
-        loader.setPath('https://opet.vercel.app/_resources/pets/stebb/');
+        // loader.setPath('https://opet.vercel.app/_resources/pets/stebb/');
+        // let baseResUrl = "https://opet.vercel.app/_resources/pets/stebb/"
         // loader.load('Sword And Shield Idle.fbx', (a) => { _OnLoad('idle', a); });
-        loader.load('Standing W_Briefcase Idle.fbx', (a) => { _OnLoad('idle', a); });
-        loader.load('Hiding Grab.fbx', (a) => { _OnLoad('attack', a); });
+        loader.load('https://opet.vercel.app/_resources/pets/stebb/Standing W_Briefcase Idle.fbx', (a) => { _OnLoad('idle', a); });
+        loader.load('https://opet.vercel.app/_resources/pets/stebb/Hiding Grab.fbx', (a) => { _OnLoad('attack', a); });
         if (this.canFly)
         {
-          loader.load('Running.fbx', (a) => { _OnLoad('walk', a); });
-          loader.load('Swimming To Edge.fbx', (a) => { _OnLoad('run', a); });
+          loader.load('https://opet.vercel.app/_resources/pets/stebb/Running.fbx', (a) => { _OnLoad('walk', a); });
+          loader.load('https://opet.vercel.app/_resources/pets/stebb/Swimming To Edge.fbx', (a) => { _OnLoad('run', a); });
         } else {
-          loader.load('Walking.fbx', (a) => { _OnLoad('walk', a); });
-          loader.load('Running.fbx', (a) => { _OnLoad('run', a); });
+          loader.load('https://opet.vercel.app/_resources/pets/stebb/Walking.fbx', (a) => { _OnLoad('walk', a); });
+          loader.load('https://opet.vercel.app/_resources/pets/stebb/Running.fbx', (a) => { _OnLoad('run', a); });
         }
-        // loader.load('Swimming To Edge.fbx', (a) => { _OnLoad('run', a); });
-        loader.load('Skateboarding.fbx', (a) => { _OnLoad('hover', a); });
-        loader.load('Getting Hit Backwards.fbx', (a) => { _OnLoad('death', a); });
-        // loader.load('Tut Hip Hop Dance.fbx', (a) => { _OnLoad('dance', a); });
-        loader.load('Falling Flat Impact.fbx', (a) => { _OnLoad('dance', a); });
+        // loader.load('https://opet.vercel.app/_resources/pets/stebb/Swimming To Edge.fbx', (a) => { _OnLoad('run', a); });
+        loader.load('https://opet.vercel.app/_resources/pets/stebb/Skateboarding.fbx', (a) => { _OnLoad('hover', a); });
+        loader.load('https://opet.vercel.app/_resources/pets/stebb/Getting Hit Backwards.fbx', (a) => { _OnLoad('death', a); });
+        // loader.load('https://opet.vercel.app/_resources/pets/stebb/Tut Hip Hop Dance.fbx', (a) => { _OnLoad('dance', a); });
+        loader.load('https://opet.vercel.app/_resources/pets/stebb/Falling Flat Impact.fbx', (a) => { _OnLoad('dance', a); });
         
       });
     }
 
     _LoadMagicaModels() {
       const loader = new FBXLoader();
-      loader.setPath('https://opet.vercel.app/_resources/fbx/girl/');
-      loader.load('girl2.fbx', (fbx) => {
+      // loader.setPath('https://opet.vercel.app/_resources/fbx/girl/');
+      loader.load('https://opet.vercel.app/_resources/fbx/girl/girl2.fbx', (fbx) => {
         this._target = fbx;
         // this._target.scale.setScalar(1);
         // this._target.scale.setScalar(0.0056);
