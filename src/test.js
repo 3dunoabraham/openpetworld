@@ -136,6 +136,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     //    _grid
 
     this._LoadControllers();
+    console.log("asdasdasdas")
     this._LoadFakeBlockchainData();
     // this._LoadBlockchainData();
     this._LoadPlayers();
