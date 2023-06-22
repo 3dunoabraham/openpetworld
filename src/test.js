@@ -85,12 +85,14 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
 
   async _Initialize()
   {
+    console.log("asdasdasdas")
     await this.walletConnection()
 
     
 
 
     /************** VARIABLES INITIALIZATION **************/
+    console.log("FUNCTIONAL INITIALIZATION")
     let params = new URLSearchParams(window.location.search)
     this.urlPetId = params.get("pet")
     this.flyEnabled = params.get("fly") === "true"
@@ -121,6 +123,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     this.deathCounter = 0
 
 
+    console.log("FUNCTIONAL INITIALIZATION")
     /************** FUNCTIONAL INITIALIZATION **************/
     this.AUDIO_MANAGER = new AUDIO_MANAGER.AudioManager()
     this._LoadThree_Scene_Camera_Light_Setup()
@@ -376,6 +379,7 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     return new Promise(async (resolve, reject) => 
     {
       let metamaskEnableResult
+      resolve(true)
       // if(window.ethereum)
       // {
       //   window.ethereum.on('chainChanged', () => { window.location.reload(false) });
