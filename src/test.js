@@ -221,53 +221,53 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
       })
     }
 
-    this._entityManager.Get('notpet')._mesh.traverse(c => {
-                            // console.log('child instanceof THREE.Mesh')
-      if (c instanceof THREE.Mesh)
-      {
-        // console.log("this.corePet.inheritance")
-        // console.log(this.corePet.inheritance)
-        if (this.corePet.inheritance < 10**5)
-        {
-                    c.material = new THREE.MeshBasicMaterial({
-                                                color: 0xAAAAAA,
-                                                wireframe: true,
-                                                transparent: true,
-                                                opacity: 0.32,
-                                                wireframeLinewidth: 1
-                                            })
-                    // console.log("eshStandardMaterial(colorLevelArray[0])")
-        } else if (this.corePet.inheritance < 10**6)
-        {
-                    c.material = new THREE.MeshStandardMaterial(colorLevelArray[0])
-                    // console.log("MeshStandardMaterial(colorLevelArray[1])")
-        } else if (this.corePet.inheritance < 10**8)
-        {
-                    c.material = new THREE.MeshStandardMaterial(colorLevelArray[1])
-                    // console.log("MeshStandardMaterial(colorLevelArray[1])")
-        } else if (this.corePet.inheritance < 10**9)
-        {
-                    c.material = new THREE.MeshStandardMaterial(colorLevelArray[2])
-                    // console.log("MeshStandardMaterial(colorLevelArray[2])")
-        } else
-        {
-          if (this.corePet.inheritance == undefined)
-          {
-            c.material = new THREE.MeshBasicMaterial({
-                                                color: 0xAAAAAA,
-                                                wireframe: true,
-                                                transparent: true,
-                                                opacity: 0.2,
-                                                wireframeLinewidth: 1
-                                            })
-            // console.log("MeshStandardMaterial(colorLevelArray[0])")
-          } else {
-            c.material = new THREE.MeshStandardMaterial(colorLevelArray[3])
-            // console.log("MeshStandardMaterial(colorLevelArray[3])")
-          }
-        }
-      }
-    })
+    // this._entityManager.Get('notpet')._mesh.traverse(c => {
+    //                         // console.log('child instanceof THREE.Mesh')
+    //   if (c instanceof THREE.Mesh)
+    //   {
+    //     // console.log("this.corePet.inheritance")
+    //     // console.log(this.corePet.inheritance)
+    //     if (this.corePet.inheritance < 10**5)
+    //     {
+    //                 c.material = new THREE.MeshBasicMaterial({
+    //                                             color: 0xAAAAAA,
+    //                                             wireframe: true,
+    //                                             transparent: true,
+    //                                             opacity: 0.32,
+    //                                             wireframeLinewidth: 1
+    //                                         })
+    //                 // console.log("eshStandardMaterial(colorLevelArray[0])")
+    //     } else if (this.corePet.inheritance < 10**6)
+    //     {
+    //                 c.material = new THREE.MeshStandardMaterial(colorLevelArray[0])
+    //                 // console.log("MeshStandardMaterial(colorLevelArray[1])")
+    //     } else if (this.corePet.inheritance < 10**8)
+    //     {
+    //                 c.material = new THREE.MeshStandardMaterial(colorLevelArray[1])
+    //                 // console.log("MeshStandardMaterial(colorLevelArray[1])")
+    //     } else if (this.corePet.inheritance < 10**9)
+    //     {
+    //                 c.material = new THREE.MeshStandardMaterial(colorLevelArray[2])
+    //                 // console.log("MeshStandardMaterial(colorLevelArray[2])")
+    //     } else
+    //     {
+    //       if (this.corePet.inheritance == undefined)
+    //       {
+    //         c.material = new THREE.MeshBasicMaterial({
+    //                                             color: 0xAAAAAA,
+    //                                             wireframe: true,
+    //                                             transparent: true,
+    //                                             opacity: 0.2,
+    //                                             wireframeLinewidth: 1
+    //                                         })
+    //         // console.log("MeshStandardMaterial(colorLevelArray[0])")
+    //       } else {
+    //         c.material = new THREE.MeshStandardMaterial(colorLevelArray[3])
+    //         // console.log("MeshStandardMaterial(colorLevelArray[3])")
+    //       }
+    //     }
+    //   }
+    // })
 
 
     document.getElementById('loading-container').style.display = "none"
@@ -494,10 +494,10 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
       signer: null,
       address: "signerAddress",
       isMaster: false,
-      balanceOf: null,
-      balance: null,
-      allowance: null,
-      funds: null,
+      balanceOf: 0,
+      balance: 0,
+      allowance: 0,
+      funds: 0,
     }}
     // if (blockchainAccountData.account === undefined) return this.WRONG_NETWORK()
 
@@ -1660,8 +1660,8 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     platform = new entity.Entity();
     platform.AddComponent(new gltf_component.StaticModelComponent({
         scene: this._scene,
-        // resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
-        resourceName: "https://opet.vercel.app/_resources/fbx/islands/0.landscape.init.fbx",
+        resourcePath: 'https://opet.vercel.app/_resources/fbx/islands/',
+        resourceName: "0.landscape.init.fbx",
         scale: 1,
         receiveShadow: true,
         castShadow: true,
