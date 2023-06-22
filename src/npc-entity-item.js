@@ -87,7 +87,7 @@ export const npc_entity = (() => {
 
     _LoadModels() {
       const loader = new FBXLoader();
-      loader.setPath("https://opet.vercel.app/"+this._params.resourcePath);
+      loader.setPath("http://localhost:8080/"+this._params.resourcePath);
       loader.load(this._params.resourceName, (glb) => {
         // console.log("load(this._params.resourceNamefbx.animations")
         this._target = glb;

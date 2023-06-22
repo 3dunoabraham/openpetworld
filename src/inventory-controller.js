@@ -82,8 +82,8 @@ export const inventory_controller = (() => {
         // console.log(item)
         // console.log(item.RenderParams)
         // console.log(item.PetTokenId)
-        div.href = "https://opet.vercel.app/?pet="+item.PetTokenId
-        // div.href = "https://opet.vercel.app/?pet="+itemName.replace("pet-","").toLowerCase()
+        div.href = "http://localhost:8080/?pet="+item.PetTokenId
+        // div.href = "http://localhost:8080/?pet="+itemName.replace("pet-","").toLowerCase()
         div.style.backgroundImage = "url('" + path + "')";
         // div.href += "/"+item.id;
       } else {
