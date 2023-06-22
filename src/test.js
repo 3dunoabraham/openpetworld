@@ -375,24 +375,24 @@ class OpenPetWorldIsland extends DOM_MANAGER.DOMManager {
     return new Promise(async (resolve, reject) => 
     {
       let metamaskEnableResult
-      if(window.ethereum)
-      {
-        window.ethereum.on('chainChanged', () => { window.location.reload(false) });
-        window.ethereum.on('accountsChanged', () => { window.location.reload(false) });
-        metamaskEnableResult = await window.ethereum.enable().catch((err) => {
-          resolve(false)
-        })
-        resolve(true)
-      } else {
-        resolve(false)
-        return this.NO_METAMASK()
-      }
-      if (metamaskEnableResult === undefined)
-      {
-        console.log("error?")
-        resolve(false)
-        return this.METAMASK_ERROR()
-      }
+      // if(window.ethereum)
+      // {
+      //   window.ethereum.on('chainChanged', () => { window.location.reload(false) });
+      //   window.ethereum.on('accountsChanged', () => { window.location.reload(false) });
+      //   metamaskEnableResult = await window.ethereum.enable().catch((err) => {
+      //     resolve(false)
+      //   })
+      //   resolve(true)
+      // } else {
+      //   resolve(false)
+      //   return this.NO_METAMASK()
+      // }
+      // if (metamaskEnableResult === undefined)
+      // {
+      //   console.log("error?")
+      //   resolve(false)
+      //   return this.METAMASK_ERROR()
+      // }
     })
   }
   METAMASK_ERROR()
